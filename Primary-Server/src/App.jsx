@@ -1,3 +1,4 @@
+import Header from "./Header/Header"
 
 
 
@@ -6,7 +7,10 @@ function App() {
 
   return (
     <>
-    <h1>Hello </h1>
+      <div className="bg-gray-900 w-screen h-screen">
+        <Header />
+      </div>
+        
     </>
   )
 }
