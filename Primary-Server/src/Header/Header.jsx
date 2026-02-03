@@ -16,17 +16,22 @@ import {
 
 
 const navItems = [
+    { name: "Projects", icon:FaFolder, href: "#projects"},
+    /*
     { name: "Dashboard", icon:FaHome},
     { name: "Team", icon:FaRegUser},
-    { name: "Projects", icon:FaFolder},
+    
     { name: "Calendar", icon:FaRegCalendar  },
+    
+    
+    */
 ]
 
 
 
 export default function Header() {
 
-    const [ activeTab, setActiveTab ] = useState("Dashboard");
+    const [ activeTab, setActiveTab ] = useState("Projects");
     const [ isMobileMenuOpen, setIsMobileMenuOpen ] = useState(false);
     
    
@@ -35,20 +40,21 @@ export default function Header() {
 
   return (
     <>
-      <div className="max-4 sm:mx-6  ">
+      <div className="max-4 sm:mx-6 " >
         <header className="bg-black border border-gray-800 rounded-2xl shadow-2xl p-4">
             <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-8">
                     <nav className="hidden lg:flex gap-4">
-                     {navItems.map(({ name, icon: Icon }) => ( 
-                        <button
+                     {navItems.map(({ name, icon: Icon, href  }) => ( 
+                        <a 
+                        href={href}
                         key={name}
                         className={` ${activeTab === name ? "bg-gray-800 text-white" : "text-gray-400 hover:text-white hover:bg-green-900" }   flex items-center gap-2 px-4 py-2 rounded-xl text-lg`}
                         onClick={() => setActiveTab(name)}
                         >
                             <Icon size={20} />
                             <span> {name} </span>
-                        </button>
+                        </a>
                      ))}  
                         
                     </nav>

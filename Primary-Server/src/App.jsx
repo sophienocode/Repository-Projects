@@ -1,4 +1,5 @@
 import Header from "./Header/Header"
+import Projects from "./sections/Projects"
 
 
 
@@ -7,9 +8,10 @@ function App() {
 
   return (
     <>
-      <div className="bg-gray-900 w-screen h-screen">
+      
         <Header />
-      </div>
+        <Projects  />
+      
         
     </>
   )
