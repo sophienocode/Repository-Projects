@@ -1,24 +1,17 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
 
 
 
 html,
 body {
-  width: 100dvw;
+ 
   overflow-x: hidden;
   background-color: #0b0620;
   color: #a7a7a7;
   scroll-behavior: smooth;
 }
 
-section {
-  width: 100dvw;
-  min-height: 100dvh;
-}
 
 @layer utilities {
   .flex-center {

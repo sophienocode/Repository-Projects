@@ -3,52 +3,50 @@
 
 const slides = [
     
-{
+
+
+  {
     id: 1,
-    title: "Loader CSS",
-    img: "/images/loadercss.png",
+    title: "d.tampe",
+    img: "/images/initial.png",
   },
   {
     id: 2,
-    title: "Responsive Landing Page",
-    img: "/images/godislove.png",
-},
-
-
-
-];
-
-   /*
+    title: "Blimp.gr",
+    img: "/images/",
+  },
   {
     id: 3,
-    title: "d.tampe",
-    img: "/images/p3.png",
+    title: "Hawk Style Design",
+    img: "/images/",
   },
   {
     id: 4,
-    title: "Blimp.gr",
-    img: "/images/p4.png",
+    title: "Lewis",
+    img: "/images/",
   },
+
+ 
   {
     id: 5,
-    title: "Hawk Style Design",
-    img: "/images/p5.png",
+    title: "Lewis",
+    img: "/images/",
   },
   {
     id: 6,
-    title: "Lewis",
-    img: "/images/p6.png",
+    title: "Sofi",
+    img: "/images/",
   },
+
   {
     id: 7,
-    title: "Sofi",
-    img: "/images/p1.png",
+    title: "d.tampe",
+    img: "/images/",
   },
 ];
 
 
 
-*/
 
 export {
   slides,

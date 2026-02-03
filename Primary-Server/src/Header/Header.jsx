@@ -101,17 +101,19 @@ export default function Header() {
             {
             isMobileMenuOpen&&(
                 <div
-                className="lg:hidden mt-4 pt-4 border border-gray-800">
+            
+                className="lg:hidden mt-4 pt-4">
                     <nav className="grid grid-cols-2 gap-4">
-                        {navItems.map(({ name, icon: Icon }) => ( 
-                        <button
+                        {navItems.map(({ name, icon: Icon , href}) => ( 
+                        <a
+                        href={href}
                         key={name}
                         className={` ${activeTab === name ? "bg-gray-800 text-white" : "text-gray-400 hover:text-white hover:bg-green-900" }   flex items-center gap-2 px-4 py-2 rounded-xl text-lg`}
                         onClick={() => setActiveTab(name)}
                         >
                             <Icon size={20} />
                             <span> {name} </span>
-                        </button>
+                        </a>
                      ))}  
                     </nav>
                 </div>
