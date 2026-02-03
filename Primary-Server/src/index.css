@@ -22,7 +22,9 @@ section {
 
 @layer utilities {
   .flex-center {
-    @apply flex items-center justify-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -34,6 +36,7 @@ section {
       rgba(253, 253, 253, 0) 100%
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .gradient-border {
@@ -53,6 +56,8 @@ section {
       rgba(253, 253, 253, 0) 100%
     ); /* Gradient colors */
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
